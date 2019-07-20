@@ -14,315 +14,423 @@
   </head>
   <body data-spy="scroll" data-target="main-nav main-footer" id="home">
     <div class="wrapper">
-      // Start of wrapper
+      <!-- Start of wrapper -->
 
-      <!-- NAVIAGATION SIDEBAR -->
-      <nav id="main-nav" class="navbar navbar-expand-sm bg-danger">
+      <!-- SIDEBAR NAVIGATION -->
+      <nav id="sidebar" class="bg-light d-none d-md-block">
         <div class="container">
-          <a href="#home" class="navbar-brand text-primary"
-            ><i class="fas fa-cocktail text-warning"></i> funkyjar</a
-          >
-          <span class="navbar-text text-warning d-none d-lg-inline-block">
+          <h1 class="pt-5 text-center">
+            <a href="#home"
+              ><i class="fas fa-cocktail text-danger"></i> funkyjar</a
+            >
+          </h1>
+          <p class="lead text-warning text-center font-italic">
             The World Of Cocktails
-          </span>
-
-          <button
-            class="navbar-toggler"
-            data-toggle="collapse"
-            data-target="#navbarCollapse"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a href="#home" class="nav-link">Home</a>
+          </p>
+        </div>
+        <ul class="list-unstyled">
+          <li>
+            <a href="#home" class="lead d-block text-center py-3">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="lead d-block text-center py-3">About</a>
+          </li>
+          <li>
+            <a href="#gear" class="lead d-block text-center py-3">Gear</a>
+          </li>
+          <li>
+            <a
+              href="#cocktails"
+              data-toggle="collapse"
+              aria-expanded="false"
+              class=" lead dropdown-toggle d-block text-center py-3"
+              >Cocktails</a
+            >
+            <ul class="collapse list-unstyled" id="cocktails">
+              <li>
+                <a href="#" class="d-block text-center py-3">Mojito</a>
               </li>
-              <li class="nav-item">
-                <a href="#about" class="nav-link">About</a>
+              <li>
+                <a href="#" class="d-block text-center py-3">Pina Colada</a>
               </li>
-              <li class="nav-item">
-                <a href="#gear" class="nav-link">Gear</a>
+              <li>
+                <a href="#" class="d-block text-center py-3"
+                  >Sex On The Beach</a
+                >
               </li>
-              <li class="nav-item">
-                <a href="#cocktails" class="nav-link">Cocktail Selection</a>
-              </li>
-              <li class="nav-item">
-                <a href="#contact" class="nav-link">Contact</a>
+              <li>
+                <a href="#" class="d-block text-center py-3"
+                  >... and many more</a
+                >
               </li>
             </ul>
-          </div>
-        </div>
+          </li>
+          <li>
+            <a href="#contact" class="lead d-block text-center py-3">Contact</a>
+          </li>
+        </ul>
+        <hr />
+        <footer class="text-center text-success">
+          <p>
+            Check out <br />
+            <a href="#home" class="px-2 font-weight-bold"
+              >d o m i d e v e l o p . c o m</a
+            >
+            for more projects.
+          </p>
+        </footer>
+        <hr />
       </nav>
+      <!-- PAGE CONTENT -->
+      <div id="content">
+        <!-- NAVIAGATION -->
+        <nav
+          id="main-nav"
+          class="navbar navbar-expand-md navbar-light bg-light fixed-top d-md-none"
+        >
+          <div class="container">
+            <h1 class="pt-2 text-center">
+              <a href="#home"
+                ><i class="fas fa-cocktail text-danger"></i> funkyjar</a
+              >
+            </h1>
 
-      <!-- SHOWCASE SLIDER -->
-      <section id="showcase">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item carousel-image-1 active">
-              <div class="container">
-                <div class="carousel-caption d-none d-sm-block text-right mb-5">
-                  <h1 class="display-3">Heading 1</h1>
-                  <p class="lead">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nisi tempora eaque ut voluptate qui quisquam corporis
-                    incidunt asperiores tenetur. Sapiente!
+            <button
+              class="navbar-toggler"
+              data-toggle="collapse"
+              data-target="#navbarCollapse"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <p class="lead text-warning text-left font-italic mb-0">
+                    The World Of Cocktails
                   </p>
-                  <a href="#" class="btn btn-danger btn-lg">Sign Up Now</a>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item carousel-image-2">
-              <div class="container">
-                <div class="carousel-caption d-none d-sm-block mb-5">
-                  <h1 class="display-3">Heading 2</h1>
-                  <p class="lead">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nisi tempora eaque ut voluptate qui quisquam corporis
-                    incidunt asperiores tenetur. Sapiente!
-                  </p>
-                  <a href="#" class="btn btn-primary btn-lg">Learn More</a>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item carousel-image-3">
-              <div class="container">
-                <div class="carousel-caption d-none d-sm-block text-right mb-5">
-                  <h1 class="display-3">Heading 3</h1>
-                  <p class="lead">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nisi tempora eaque ut voluptate qui quisquam corporis
-                    incidunt asperiores tenetur. Sapiente!
-                  </p>
-                  <a href="#" class="btn btn-success btn-lg">Learn More</a>
-                </div>
-              </div>
+                </li>
+                <li class="nav-item">
+                  <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#gear" class="nav-link">Gear</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#cocktails" class="nav-link">Cocktail Selection</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#contact" class="nav-link">Contact</a>
+                </li>
+              </ul>
             </div>
           </div>
-          <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
-            <span class="carousel-control-prev-icon"></span>
-          </a>
-          <a href="#myCarousel" data-slide="next" class="carousel-control-next">
-            <span class="carousel-control-next-icon"></span>
-          </a>
-        </div>
-      </section>
+        </nav>
 
-      <!-- HOME ICON SECTION -->
-      <section id="home-icons" class="py-0">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4 py-5 text-center bg-primary text-danger">
-              <i class="fas fa-cog fa-3x mb-2"></i>
-              <h3>About Cocktails</h3>
-              <p>
-                What are they? Origin of cocktails. Why are they popular? And
-                much more to learn about it.
-              </p>
+        <!-- SHOWCASE SLIDER -->
+        <section id="showcase">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li
+                data-target="#myCarousel"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item carousel-image-1 active">
+                <div class="container">
+                  <div class=" carousel-caption text-center">
+                    <h1 class="display-3">Ready to shake?</h1>
+                    <p class="h3 d-none d-sm-block py-2">
+                      Welcome to
+                      <i class="fas fa-cocktail text-danger"></i>
+                      <span class="font-weight-bold">f u n k y j a r</span>,
+                      your best cocktail resource out there. Here you can find
+                      out more about cocktails, what you need and how to make
+                      them. You will be able to throw the best cocktail party
+                      ever. What are are you waiting for? Get started!
+                    </p>
+                    <a href="#" class="btn btn-danger btn-lg">Get started</a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item carousel-image-2">
+                <div class="container">
+                  <div class="carousel-caption text-center">
+                    <h1 class="display-3">What's a cocktail?</h1>
+                    <p class="h3 d-none d-sm-block py-2">
+                      Learn interesting facts, tips and tricks to improve your
+                      knowledge and skills. Explore diferent types and methods
+                      to make cocktails and find out what you need for the best
+                      cocktail party ever.
+                    </p>
+                    <a href="#" class="btn btn-primary btn-lg">Learn Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item carousel-image-3">
+                <div class="container">
+                  <div class="carousel-caption text-center">
+                    <h1 class="display-3">Stuff you need</h1>
+                    <p class="h3 d-none d-sm-block py-2">
+                      Discover all about the gear you need to make your best
+                      cocktails. From the basics to advanced, make yourself
+                      ready to be a cocktail master.
+                    </p>
+                    <a href="#" class="btn btn-success btn-lg">Discover Gear</a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item carousel-image-4">
+                <div class="container">
+                  <div class="carousel-caption text-center">
+                    <h1 class="display-3">Make your favorite!</h1>
+                    <p class="h3 d-none d-sm-block py-2">
+                      Mojito? Long Island? Don't worry, we got you covered with
+                      wide selection of cocktail recepies. You just have to pick
+                      one and enjoy! Cheers!
+                    </p>
+                    <a href="#" class="btn btn-warning btn-lg"
+                      >Make Cocktails</a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-md-4 py-5 text-center bg-danger text-primary">
-              <i class="fas fa-cloud fa-3x mb-2"></i>
-              <h3>Equipment</h3>
-              <p>
-                What do you need to make your best cocktails. Find out more
-                about home gear for the best cocktail party.
-              </p>
-            </div>
-            <div class="col-md-4 py-5 text-center bg-light text-warning">
-              <i class="fas fa-cart-plus fa-3x mb-2"></i>
-              <h3>Recepies</h3>
-              <p>
-                The best recepies for all most popular cocktails in one place.
-                Neatly done just for you.
-              </p>
-            </div>
+            <a
+              href="#myCarousel"
+              data-slide="prev"
+              class="carousel-control-prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a
+              href="#myCarousel"
+              data-slide="next"
+              class="carousel-control-next"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </a>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- HOME HEADING SECTION -->
-      <section id="home-heading" class="p-5">
-        <div class="dark-overlay">
-          <div class="row">
-            <div class="col">
-              <div class="container pt-5">
-                <h1>Are you ready to get started?</h1>
-                <p class="d-none d-md-block">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Pariatur id maxime suscipit accusamus quam? Quis sint
-                  distinctio eum quidem! Nobis!
+        <!-- HOME ICON SECTION -->
+        <section id="home-icons" class="py-0">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 py-5 text-center bg-dark text-success">
+                <i class="fas fa-cog fa-3x mb-2"></i>
+                <h3>About Cocktails</h3>
+                <p>
+                  What are they? Origin of cocktails. Why are they popular? And
+                  much more to learn about it.
+                </p>
+              </div>
+              <div class="col-md-4 py-5 text-center bg-dark text-danger">
+                <i class="fas fa-cloud fa-3x mb-2"></i>
+                <h3>Equipment</h3>
+                <p>
+                  What do you need to make your best cocktails. Find out more
+                  about home gear for the best cocktail party.
+                </p>
+              </div>
+              <div class="col-md-4 py-5 text-center bg-dark text-light">
+                <i class="fas fa-cart-plus fa-3x mb-2"></i>
+                <h3>Recepies</h3>
+                <p>
+                  The best recepies for all most popular cocktails in one place.
+                  Neatly done just for you.
                 </p>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- INFO SECTION -->
-      <section id="info" class="py-3">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 align-self-center">
-              <h3>Lorem Ipsum</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eum
-                odit, magni quisquam soluta recusandae vitae suscipit distinctio
-                minima reprehenderit.
-              </p>
-              <a href="about.html" class="btn btn-outline-danger btn-lg"
-                >Learn More</a
-              >
-            </div>
-            <div class="col-md-6">
-              <img src="img/laptop.png" alt="Laptop" class="img-fluid" />
+        <!-- HOME HEADING SECTION -->
+        <section id="home-heading" class="p-5">
+          <div class="dark-overlay">
+            <div class="row">
+              <div class="col">
+                <div class="container pt-5">
+                  <h1>Are you ready to get started?</h1>
+                  <p class="d-none d-md-block">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Pariatur id maxime suscipit accusamus quam? Quis sint
+                    distinctio eum quidem! Nobis!
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- PHOTO GALLERY -->
-      <section id="gallery" class="py-5">
-        <div class="container">
-          <h1 class="text-center">Photo Gallery</h1>
-          <p class="text-center">Check out our photos</p>
-          <div class="row mb-4">
-            <div class="col-md-4">
-              <a
-                href="https://source.unsplash.com/random/560x560"
-                data-toggle="lightbox"
-                data-gallery="img-gallery"
-                data-height="560"
-                data-width="560"
-              >
-                <img
-                  src="https://source.unsplash.com/random/560x560"
-                  alt=""
-                  class="img-fluid"
-              /></a>
-            </div>
-            <div class="col-md-4">
-              <a
-                href="https://source.unsplash.com/random/561x561"
-                data-toggle="lightbox"
-                data-gallery="img-gallery"
-                data-height="561"
-                data-width="561"
-              >
-                <img
-                  src="https://source.unsplash.com/random/561x561"
-                  alt=""
-                  class="img-fluid"
-              /></a>
-            </div>
-            <div class="col-md-4">
-              <a
-                href="https://source.unsplash.com/random/562x562"
-                data-toggle="lightbox"
-                data-gallery="img-gallery"
-                data-height="562"
-                data-width="562"
-              >
-                <img
-                  src="https://source.unsplash.com/random/562x562"
-                  alt=""
-                  class="img-fluid"
-              /></a>
+        <!-- INFO SECTION -->
+        <section id="info" class="py-3">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 align-self-center">
+                <h3>Lorem Ipsum</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                  eum odit, magni quisquam soluta recusandae vitae suscipit
+                  distinctio minima reprehenderit.
+                </p>
+                <a href="about.html" class="btn btn-outline-danger btn-lg"
+                  >Learn More</a
+                >
+              </div>
+              <div class="col-md-6">
+                <img src="img/laptop.png" alt="Laptop" class="img-fluid" />
+              </div>
             </div>
           </div>
-          <div class="row mb-4">
-            <div class="col-md-4">
-              <a
-                href="https://source.unsplash.com/random/563x563"
-                data-toggle="lightbox"
-                data-gallery="img-gallery"
-                data-height="563"
-                data-width="563"
-              >
-                <img
-                  src="https://source.unsplash.com/random/563x563"
-                  alt=""
-                  class="img-fluid"
-              /></a>
-            </div>
-            <div class="col-md-4">
-              <a
-                href="https://source.unsplash.com/random/564x564"
-                data-toggle="lightbox"
-                data-gallery="img-gallery"
-                data-height="564"
-                data-width="564"
-              >
-                <img
-                  src="https://source.unsplash.com/random/564x564"
-                  alt=""
-                  class="img-fluid"
-              /></a>
-            </div>
-            <div class="col-md-4">
-              <a
-                href="https://source.unsplash.com/random/565x565"
-                data-toggle="lightbox"
-                data-gallery="img-gallery"
-                data-height="565"
-                data-width="565"
-              >
-                <img
-                  src="https://source.unsplash.com/random/565x565"
-                  alt=""
-                  class="img-fluid"
-              /></a>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- NEWSLETTER -->
-      <section id="newsletter" class="text-center p-5 bg-dark text-white">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h1>Sign Up for our Newsletter</h1>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
-                quia perspiciatis quis molestias eligendi velit et, a, quisquam
-                libero ratione ipsa optio sint harum sed distinctio eveniet
-                excepturi? Molestiae, maiores.
-              </p>
-              <form class="form-inline justify-content-center">
-                <input
-                  type="text"
-                  class="form-control mb-2 mr-2"
-                  placeholder="Enter Name"
-                />
-                <input
-                  type="text"
-                  class="form-control mb-2 mr-2"
-                  placeholder="Enter Email"
-                />
-                <button class="btn btn-primary mb-2">Submit</button>
-              </form>
+        <!-- PHOTO GALLERY -->
+        <section id="gallery" class="py-5">
+          <div class="container">
+            <h1 class="text-center">Photo Gallery</h1>
+            <p class="text-center">Check out our photos</p>
+            <div class="row mb-4">
+              <div class="col-md-4">
+                <a
+                  href="https://source.unsplash.com/random/560x560"
+                  data-toggle="lightbox"
+                  data-gallery="img-gallery"
+                  data-height="560"
+                  data-width="560"
+                >
+                  <img
+                    src="https://source.unsplash.com/random/560x560"
+                    alt=""
+                    class="img-fluid"
+                /></a>
+              </div>
+              <div class="col-md-4">
+                <a
+                  href="https://source.unsplash.com/random/561x561"
+                  data-toggle="lightbox"
+                  data-gallery="img-gallery"
+                  data-height="561"
+                  data-width="561"
+                >
+                  <img
+                    src="https://source.unsplash.com/random/561x561"
+                    alt=""
+                    class="img-fluid"
+                /></a>
+              </div>
+              <div class="col-md-4">
+                <a
+                  href="https://source.unsplash.com/random/562x562"
+                  data-toggle="lightbox"
+                  data-gallery="img-gallery"
+                  data-height="562"
+                  data-width="562"
+                >
+                  <img
+                    src="https://source.unsplash.com/random/562x562"
+                    alt=""
+                    class="img-fluid"
+                /></a>
+              </div>
+            </div>
+            <div class="row mb-4">
+              <div class="col-md-4">
+                <a
+                  href="https://source.unsplash.com/random/563x563"
+                  data-toggle="lightbox"
+                  data-gallery="img-gallery"
+                  data-height="563"
+                  data-width="563"
+                >
+                  <img
+                    src="https://source.unsplash.com/random/563x563"
+                    alt=""
+                    class="img-fluid"
+                /></a>
+              </div>
+              <div class="col-md-4">
+                <a
+                  href="https://source.unsplash.com/random/564x564"
+                  data-toggle="lightbox"
+                  data-gallery="img-gallery"
+                  data-height="564"
+                  data-width="564"
+                >
+                  <img
+                    src="https://source.unsplash.com/random/564x564"
+                    alt=""
+                    class="img-fluid"
+                /></a>
+              </div>
+              <div class="col-md-4">
+                <a
+                  href="https://source.unsplash.com/random/565x565"
+                  data-toggle="lightbox"
+                  data-gallery="img-gallery"
+                  data-height="565"
+                  data-width="565"
+                >
+                  <img
+                    src="https://source.unsplash.com/random/565x565"
+                    alt=""
+                    class="img-fluid"
+                /></a>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- FOOTER -->
-      <footer id="main-footer" class="text-center p-4">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <p>Copyright &copy; <span id="year"></span> Glozzom</p>
+        <!-- NEWSLETTER -->
+        <section id="newsletter" class="text-center p-5 bg-dark text-white">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h1>Sign Up for our Newsletter</h1>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
+                  quia perspiciatis quis molestias eligendi velit et, a,
+                  quisquam libero ratione ipsa optio sint harum sed distinctio
+                  eveniet excepturi? Molestiae, maiores.
+                </p>
+                <form class="form-inline justify-content-center">
+                  <input
+                    type="text"
+                    class="form-control mb-2 mr-2"
+                    placeholder="Enter Name"
+                  />
+                  <input
+                    type="text"
+                    class="form-control mb-2 mr-2"
+                    placeholder="Enter Email"
+                  />
+                  <button class="btn btn-primary mb-2">Submit</button>
+                </form>
+              </div>
             </div>
           </div>
-        </div>
-      </footer>
+        </section>
+
+        <!-- FOOTER -->
+        <footer id="main-footer" class="text-center p-4">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <p>Copyright &copy; <span id="year"></span> Glozzom</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
-    // End of wrapper
+    <!-- End of wrapper -->
 
     <script
       src="http://code.jquery.com/jquery-3.4.1.min.js"

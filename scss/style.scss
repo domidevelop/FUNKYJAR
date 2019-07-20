@@ -1,10 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Dekko&display=swap');
+
 //  ******************CUTSOMIZE BOOTSTRAP******************
 
 $primary: #2c5d0f;
-$danger: #f4c262;
+$success: #3f996b;
+$danger: #fc8d36;
 $warning: #cb515f;
 $light: #fbeccf;
-$dark: #493a1d;
+$dark: #232020;
+
+// COLORS IN rbga WITH 0.7 OPACITY
+
+// $primary: rgba(44, 93, 15, 0.7);
+// $success: rgba(63, 153, 107, 0.7);
+// $danger: rgba(252, 141, 54, 0.7);
+// $warning: rgba(203, 81, 95, 0.7);
+// $light: rgba(251, 236, 207, 0.7);
+// $dark: rgba(35, 32, 32, 0.7);
+
+$font-family-base: 'Dekko', cursive;
 
 @import 'bootstrap';
 
@@ -14,33 +28,121 @@ body {
   overflow-x: hidden;
 }
 
-.navbar .nav-link {
-  font-size: 14px;
-  text-transform: uppercase;
-  padding-left: 1rem !important;
-  padding-right: 1rem !important;
+a {
+  text-decoration: none;
 }
 
-.navbar .nav-item.active {
-  border-left: #444 3px solid;
+a:hover {
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+}
+
+#sidebar {
+  min-width: 280px;
+  max-width: 280px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 100;
+  transition: all 0.3s;
+  background: linear-gradient(
+      to bottom,
+      rgba(251, 236, 207, 0.9),
+      90%,
+      transparent
+    ),
+    url('../img/photo_cocktail_05.jpg');
+  background-size: cover;
+}
+
+#content {
+  width: calc(100% - 280px);
+  transition: all 0.3s;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#sidebar {
+  h1 {
+    a {
+      letter-spacing: 3px;
+      color: $success;
+    }
+    a:hover {
+      color: $success;
+    }
+  }
+  li {
+    a {
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      color: $success;
+    }
+    a:hover {
+      color: $danger;
+    }
+  }
+  #cocktails {
+    li {
+      a {
+        letter-spacing: 3px;
+        font-style: italic;
+      }
+    }
+  }
+}
+
+.nav-link {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: $success !important;
+}
+
+.nav-link:hover {
+  color: $danger !important;
+}
+
+@media (max-width: 768px) {
+  #content {
+    width: 100%;
+  }
 }
 
 .carousel-item {
-  height: 450px;
+  height: 100vh;
+}
+
+.carousel-caption {
+  bottom: 25%;
 }
 
 .carousel-image-1 {
-  background: url('../img/image1.jpg');
+  background: linear-gradient(to top, rgba(44, 93, 15, 0.7), 80%, transparent),
+    url('../img/photo_cocktail_01.jpg');
   background-size: cover;
 }
 
 .carousel-image-2 {
-  background: url('../img/image2.jpg');
+  background: linear-gradient(to top, rgba(44, 93, 15, 0.7), 80%, transparent),
+    url('../img/photo_cocktail_02.jpg');
   background-size: cover;
 }
 
 .carousel-image-3 {
-  background: url('../img/image3.jpg');
+  background: linear-gradient(to top, rgba(35, 32, 32, 0.7), 20%, transparent),
+    url('../img/photo_cocktail_03.jpg');
+  background-size: cover;
+}
+
+.carousel-image-4 {
+  background: linear-gradient(to top, rgba(63, 153, 107, 0.7), 80%, transparent),
+    url('../img/photo_cocktail_04.jpg');
   background-size: cover;
 }
 
@@ -61,21 +163,6 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
-}
-
-#video-play {
-  position: relative;
-  min-height: 200px;
-  background: url('../img/media.jpg');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: 0 -300px;
-  text-align: center;
-  color: #fff;
-}
-
-#video-play a {
-  color: #fff;
 }
 
 #page-header {
