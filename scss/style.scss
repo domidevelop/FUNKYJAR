@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Dekko&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Barriecito|Bungee+Inline|Cabin+Sketch|Fascinate|Finger+Paint|Freckle+Face|Frijole|Kirang+Haerang|Love+Ya+Like+A+Sister|Monoton&display=swap');
 //  ******************CUTSOMIZE BOOTSTRAP******************
 
 $primary: #2c5d0f;
@@ -20,19 +20,27 @@ $dark: #232020;
 
 $font-family-base: 'Dekko', cursive;
 
+$link-hover-color: 0%;
+$emphasized-link-hover-darken-percentage: 0%;
+
 @import 'bootstrap';
 
 //  ****************** end of CUTSOMIZE BOOTSTRAP******************
 
+@mixin bg-cover {
+  background-size: cover;
+}
+
 body {
-  overflow-x: hidden;
+  //overflow-x: hidden;
+  background-color: $light;
+  color: $dark;
+  position: relative;
 }
 
-a {
-  text-decoration: none;
-}
-
-a:hover {
+a,
+a:hover,
+a:focus {
   text-decoration: none;
 }
 
@@ -57,18 +65,7 @@ a:hover {
       transparent
     ),
     url('../img/photo_cocktail_05.jpg');
-  background-size: cover;
-}
-
-#content {
-  width: calc(100% - 280px);
-  transition: all 0.3s;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-#sidebar {
+  @include bg-cover;
   h1 {
     a {
       letter-spacing: 3px;
@@ -84,18 +81,19 @@ a:hover {
       letter-spacing: 5px;
       color: $success;
     }
-    a:hover {
+    a:hover,
+    a:active {
       color: $danger;
     }
   }
-  #cocktails {
-    li {
-      a {
-        letter-spacing: 3px;
-        font-style: italic;
-      }
-    }
-  }
+}
+
+#content {
+  width: calc(100% - 280px);
+  transition: all 0.3s;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .nav-link {
@@ -104,14 +102,9 @@ a:hover {
   color: $success !important;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.active {
   color: $danger !important;
-}
-
-@media (max-width: 768px) {
-  #content {
-    width: 100%;
-  }
 }
 
 .carousel-item {
@@ -125,75 +118,225 @@ a:hover {
 .carousel-image-1 {
   background: linear-gradient(to top, rgba(44, 93, 15, 0.7), 80%, transparent),
     url('../img/photo_cocktail_01.jpg');
-  background-size: cover;
+  @include bg-cover;
 }
 
 .carousel-image-2 {
   background: linear-gradient(to top, rgba(44, 93, 15, 0.7), 80%, transparent),
     url('../img/photo_cocktail_02.jpg');
-  background-size: cover;
+  @include bg-cover;
 }
 
 .carousel-image-3 {
   background: linear-gradient(to top, rgba(35, 32, 32, 0.7), 20%, transparent),
     url('../img/photo_cocktail_03.jpg');
-  background-size: cover;
+  @include bg-cover;
 }
 
 .carousel-image-4 {
   background: linear-gradient(to top, rgba(63, 153, 107, 0.7), 80%, transparent),
     url('../img/photo_cocktail_04.jpg');
-  background-size: cover;
+  @include bg-cover;
 }
 
-#home-heading {
+.headers {
+  letter-spacing: 5px;
   position: relative;
   min-height: 200px;
-  background: url('../img/lights.jpg');
+  background: linear-gradient(to top, rgba(44, 93, 15, 0.7), 90%, transparent),
+    url('../img/photo_cocktail_06.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
-  text-align: center;
-  color: #fff;
 }
 
-.dark-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+.home-cards1:hover,
+.home-cards2:hover,
+.home-cards3:hover,
+.cocktail-cards1:hover,
+.cocktail-cards2:hover,
+.cocktail-cards3:hover,
+.cocktail-cards4:hover,
+.cocktail-cards5:hover {
+  transition: all 0.7s;
+  cursor: pointer;
+  $emphasized-link-hover-darken-percentage: 0%;
+}
+
+.home-cards1:hover {
+  background-color: $primary;
+  color: $success !important;
+}
+
+.home-cards2:hover {
+  background-color: $danger;
+  color: $dark !important;
+}
+
+.home-cards3:hover {
+  background-color: $warning;
+  color: $danger !important;
+}
+
+.cocktail-cards1:hover,
+.cocktail-cards2:hover,
+.cocktail-cards3:hover,
+.cocktail-cards4:hover,
+.cocktail-cards5:hover {
+  color: $light !important;
+}
+
+.cocktail-cards1:hover {
+  background-color: $primary;
+  color: $light !important;
+}
+
+.cocktail-cards2:hover {
+  background-color: $success;
+  color: $light !important;
+}
+
+.cocktail-cards3:hover {
+  background-color: $danger;
+  color: $light !important;
+}
+
+.cocktail-cards4:hover {
+  background-color: $warning;
+  color: $light !important;
+}
+
+.cocktail-cards5:hover {
+  background-color: $dark;
+  color: $light !important;
+}
+
+.img-bg-about {
+  background: radial-gradient(transparent 10%, rgb(251, 236, 207));
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
 }
 
-#page-header {
-  height: 200px;
-  background: url('../img/image1.jpg');
-  background-position: 0 -360px;
-  background-attachment: fixed;
-  color: #fff;
-  border-bottom: 1px #eee solid;
-  padding-top: 50px;
+.img-fluid-about {
+  position: relative;
+  z-index: -1;
 }
 
-.about-img {
-  margin-top: -50px;
+// $primary: rgba(44, 93, 15, 0.7);
+// $success: rgba(63, 153, 107, 0.7);
+// $danger: rgba(252, 141, 54, 0.7);
+// $warning: rgba(203, 81, 95, 0.7);
+// $light: rgba(251, 236, 207, 0.7);
+// $dark: rgba(35, 32, 32, 0.7);
+
+.modal-background1 {
+  background: linear-gradient(to top, rgba(63, 153, 107, 0.7), 40%, transparent),
+    url('../img/photo_cocktail_mojito.jpg');
+  @include bg-cover;
+  min-height: 600px;
 }
 
-#faq .card {
-  border: #444;
+.modal-background2 {
+  background: linear-gradient(
+      to bottom,
+      rgba(63, 153, 107, 0.7),
+      50%,
+      rgba(0, 0, 0, 0.7)
+    ),
+    url('../img/photo_cocktail_mojito.jpg');
+  @include bg-cover;
+  min-height: 600px;
 }
 
-#faq a {
-  color: #fff;
-  text-decoration: none;
+.modal-background3 {
+  background: linear-gradient(to top, rgba(63, 153, 107, 0.7), 60%, transparent),
+    url('../img/chalkboard.jpg');
+  @include bg-cover;
+  min-height: 600px;
 }
 
-#faq .card-body,
-#faq .card-header {
-  background: #333;
+// MODAL FONTS
+
+.modal-header {
+  font-family: 'Monoton', cursive;
+}
+// MAIN STRONG FONTS
+.font-1 {
+  font-family: 'Frijole', cursive;
+}
+.font-2 {
+  font-family: 'Barriecito', cursive;
+}
+.font-3 {
+  font-family: 'Fascinate', cursive;
+}
+.font-4 {
+  font-family: 'Freckle Face', cursive;
 }
 
-#main-footer {
-  background: #000;
-  color: #fff;
+.font-5 {
+  font-family: 'Finger Paint', cursive;
+}
+
+.font-6 {
+  font-family: 'Kirang Haerang', cursive;
+}
+// SECONDARY LIGHTER FONTS
+.font-7 {
+  font-family: 'Cabin Sketch', cursive;
+}
+
+.font-8 {
+  font-family: 'Love Ya Like A Sister', cursive;
+}
+
+.font-9 {
+  font-family: 'Kirang Haerang', cursive;
+}
+
+.rotate-up {
+  transform: rotate(-5deg);
+}
+
+.rotate-down {
+  transform: rotate(5deg);
+}
+
+// font-family: 'Monoton', cursive;
+// font-family: 'Fascinate', cursive;
+// font-family: 'Barriecito', cursive;
+// font-family: 'Frijole', cursive;
+// font-family: 'Cabin Sketch', cursive;
+// font-family: 'Love Ya Like A Sister', cursive;
+// font-family: 'Bungee Inline', cursive;
+// font-family: 'Freckle Face', cursive;
+// font-family: 'Finger Paint', cursive;
+// font-family: 'Kirang Haerang', cursive;
+
+// *********************************MEDIA QUERIES ************************************
+
+@media (max-height: 605px) {
+  #sidebar {
+    overflow: scroll;
+  }
+}
+
+@media (max-width: 768px) {
+  #content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  #showcase {
+    .display-3 {
+      font-size: 3rem;
+    }
+    .h3 {
+      font-size: 1.5rem;
+    }
+  }
+  .headers {
+    h1 {
+      font-size: 2rem;
+    }
+  }
 }

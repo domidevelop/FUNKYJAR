@@ -5,19 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="https://kit.fontawesome.com/a6ae180d5d.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
-    />
     <link rel="stylesheet" href="css/style.css" />
     <title>F U N K Y J A R</title>
   </head>
-  <body data-spy="scroll" data-target="main-nav main-footer" id="home">
+  <body data-spy="scroll" id="home">
+    <!-- Start of wrapper -->
     <div class="wrapper">
-      <!-- Start of wrapper -->
-
-      <!-- SIDEBAR NAVIGATION -->
-      <nav id="sidebar" class="bg-light d-none d-md-block">
+      <!-- SIDEBAR -->
+      <nav id="sidebar" class="nav bg-light d-none d-md-block">
         <div class="container">
           <h1 class="pt-5 text-center">
             <a href="#home"
@@ -25,48 +20,24 @@
             >
           </h1>
           <p class="lead text-warning text-center font-italic">
-            The World Of Cocktails
+            Cocktails. Made simple.
           </p>
         </div>
         <ul class="list-unstyled">
-          <li>
-            <a href="#home" class="lead d-block text-center py-3">Home</a>
+          <li class="nav-item">
+            <a href="#home" class="nav-link lead d-block text-center py-3">Home</a>
           </li>
-          <li>
-            <a href="#about" class="lead d-block text-center py-3">About</a>
+          <li class="nav-item">
+            <a href="#about-header" class="nav-link lead d-block text-center py-3">About</a>
           </li>
-          <li>
-            <a href="#gear" class="lead d-block text-center py-3">Gear</a>
+          <li class="nav-item">
+            <a href="#gear-header" class="nav-link lead d-block text-center py-3">Gear</a>
           </li>
-          <li>
-            <a
-              href="#cocktails"
-              data-toggle="collapse"
-              aria-expanded="false"
-              class=" lead dropdown-toggle d-block text-center py-3"
-              >Cocktails</a
-            >
-            <ul class="collapse list-unstyled" id="cocktails">
-              <li>
-                <a href="#" class="d-block text-center py-3">Mojito</a>
-              </li>
-              <li>
-                <a href="#" class="d-block text-center py-3">Pina Colada</a>
-              </li>
-              <li>
-                <a href="#" class="d-block text-center py-3"
-                  >Sex On The Beach</a
-                >
-              </li>
-              <li>
-                <a href="#" class="d-block text-center py-3"
-                  >... and many more</a
-                >
-              </li>
-            </ul>
+          <li class="nav-item">
+            <a href="#cocktails-header" class="nav-link lead d-block text-center py-3">Cocktails</a>
           </li>
-          <li>
-            <a href="#contact" class="lead d-block text-center py-3">Contact</a>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link lead d-block text-center py-3">Contact</a>
           </li>
         </ul>
         <hr />
@@ -81,9 +52,9 @@
         </footer>
         <hr />
       </nav>
-      <!-- PAGE CONTENT -->
+      <!-- CONTENT -->
       <div id="content">
-        <!-- NAVIAGATION -->
+        <!-- HORIZONTAL NAVIAGATION -->
         <nav
           id="main-nav"
           class="navbar navbar-expand-md navbar-light bg-light fixed-top d-md-none"
@@ -106,30 +77,30 @@
               <ul class="navbar-nav">
                 <li class="nav-item">
                   <p class="lead text-warning text-left font-italic mb-0">
-                    The World Of Cocktails
+                    Cocktails. Made simple.
                   </p>
                 </li>
                 <li class="nav-item">
-                  <a href="#home" class="nav-link">Home</a>
+                  <a href="#home" class="nav-link lead">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#about" class="nav-link">About</a>
+                  <a href="#about-header" class="nav-link lead">About</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#gear" class="nav-link">Gear</a>
+                  <a href="#gear-header" class="nav-link lead">Gear</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#cocktails" class="nav-link">Cocktail Selection</a>
+                  <a href="#cocktails-header" class="nav-link lead">Cocktails</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#contact" class="nav-link">Contact</a>
+                  <a href="#contact" class="nav-link lead">Contact</a>
                 </li>
               </ul>
             </div>
           </div>
         </nav>
 
-        <!-- SHOWCASE SLIDER -->
+        <!-- SHOWCASE -->
         <section id="showcase">
           <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -156,7 +127,9 @@
                       them. You will be able to throw the best cocktail party
                       ever. What are are you waiting for? Get started!
                     </p>
-                    <a href="#" class="btn btn-danger btn-lg">Get started</a>
+                    <a href="#get-started-header" class="btn btn-danger btn-lg"
+                      >Get started</a
+                    >
                   </div>
                 </div>
               </div>
@@ -170,7 +143,7 @@
                       to make cocktails and find out what you need for the best
                       cocktail party ever.
                     </p>
-                    <a href="#" class="btn btn-primary btn-lg">Learn Now</a>
+                    <a href="#about-header" class="btn btn-primary btn-lg">Learn Now</a>
                   </div>
                 </div>
               </div>
@@ -183,7 +156,7 @@
                       cocktails. From the basics to advanced, make yourself
                       ready to be a cocktail master.
                     </p>
-                    <a href="#" class="btn btn-success btn-lg">Discover Gear</a>
+                    <a href="#gear-header" class="btn btn-success btn-lg">Discover Gear</a>
                   </div>
                 </div>
               </div>
@@ -196,7 +169,7 @@
                       wide selection of cocktail recepies. You just have to pick
                       one and enjoy! Cheers!
                     </p>
-                    <a href="#" class="btn btn-warning btn-lg"
+                    <a href="#cocktails-header" class="btn btn-warning btn-lg"
                       >Make Cocktails</a
                     >
                   </div>
@@ -220,217 +193,553 @@
           </div>
         </section>
 
-        <!-- HOME ICON SECTION -->
-        <section id="home-icons" class="py-0">
+        <!-- GET STARTED HEADER -->
+        <section id="get-started-header" class="headers py-5">
+          <div class="container py-5">
+            <h1 class="text-light text-center mb-0">
+              Welcome to<br><i class="fas fa-cocktail text-danger"></i>
+              <span class="font-weight-bold">f u n k y j a r</span><br><span class="font-italic">Cocktails. Made simple.</span>
+            </h1>
+          </div>
+        </section>
+
+        <!-- GET STARTED SECTION -->
+        <section id="get-started-section" class="py-0">
           <div class="container">
             <div class="row">
-              <div class="col-md-4 py-5 text-center bg-dark text-success">
-                <i class="fas fa-cog fa-3x mb-2"></i>
+              <a
+                class="home-cards1 col-md-4 py-5 text-center text-primary"
+                href="#about-header"
+              >
+                <i class="fas fa-book-open fa-3x mb-2"></i>
                 <h3>About Cocktails</h3>
                 <p>
-                  What are they? Origin of cocktails. Why are they popular? And
-                  much more to learn about it.
+                  What are they? Why are they popular? And much more to learn
+                  about it.
                 </p>
-              </div>
-              <div class="col-md-4 py-5 text-center bg-dark text-danger">
-                <i class="fas fa-cloud fa-3x mb-2"></i>
-                <h3>Equipment</h3>
+                <h4 class="mb-0 text-light">Start now!</h3>
+              </a>
+              <a
+                class="home-cards2 col-md-4 py-5 text-center text-danger"
+                href="#gear-header"
+              >
+                <i class="fas fa-briefcase fa-3x mb-2"></i>
+                <h3>Gear you need</h3>
                 <p>
                   What do you need to make your best cocktails. Find out more
                   about home gear for the best cocktail party.
                 </p>
-              </div>
-              <div class="col-md-4 py-5 text-center bg-dark text-light">
-                <i class="fas fa-cart-plus fa-3x mb-2"></i>
-                <h3>Recepies</h3>
+                <h4 class="mb-0 text-light">Learn more!</h3>
+              </a>
+              <a
+                class="home-cards3 col-md-4 py-5 text-center text-warning"
+                href="#cocktails-header"
+              >
+                <i class="fas fa-clipboard-list fa-3x mb-2"></i>
+                <h3>Cocktail Recepies</h3>
                 <p>
-                  The best recepies for all most popular cocktails in one place.
-                  Neatly done just for you.
+                  The best recepies for all the most popular cocktails in one
+                  place. Neatly done just for you.
                 </p>
-              </div>
+                <h4 class="mb-0 text-light">Make cocktails now!</h3>
+              </a>
             </div>
           </div>
         </section>
 
-        <!-- HOME HEADING SECTION -->
-        <section id="home-heading" class="p-5">
-          <div class="dark-overlay">
-            <div class="row">
-              <div class="col">
-                <div class="container pt-5">
-                  <h1>Are you ready to get started?</h1>
-                  <p class="d-none d-md-block">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Pariatur id maxime suscipit accusamus quam? Quis sint
-                    distinctio eum quidem! Nobis!
+        <!-- ABOUT HEADER -->
+        <section id="about-header" class="headers py-5">
+          <div class="container py-5">
+            <h1
+              class="display-4 text-light text-center text-uppercase mb-0"
+            >
+              About
+            </h1>
+          </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="py-3">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-6 align-self-center">
+                <p>
+                  <span class="h3">Definition Of Cocktail.</span> <hr> Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Sit soluta,
+                  accusantium dolore obcaecati sint repudiandae reiciendis ullam
+                  doloremque suscipit amet corrupti! Minima nihil optio vel
+                  eveniet nobis, praesentium ut fugiat, laborum officiis ex
+                  distinctio itaque! Provident voluptatum excepturi obcaecati
+                  ea! Ratione iure autem, amet excepturi nobis fugiat eaque
+                  nesciunt sed officia minus illo sint quam laboriosam atque?
+                  Ipsam fugiat suscipit deserunt vel reprehenderit facilis!
+                  Molestias, sapiente nisi! Laborum, fugiat doloribus..
+                </p>
+              </div>
+              <div class="col-md-6 p-4 img-bg-about d-none d-md-block">
+                <img src="img/photo_cocktail_07.jpg" alt="Cocktail" class="img-fluid rounded-circle img-fluid-about" />
+              </div>
+            </div>
+            <div class="row align-items-center">
+              <div class="col-md-6 img-bg-about">
+                <img src="img/photo_cocktail_16.jpg" alt="Laptop" class="img-fluid rounded-circle img-fluid-about" />
+              </div>
+              <div class="col-md-6 align-self-center">
+                <p>
+                  <span class="h3">Brief History.</span> <hr> Lorem ipsum dolor sit
+                  amet consectetur adipisicing elit. Sit soluta, accusantium
+                  dolore obcaecati sint repudiandae reiciendis ullam doloremque
+                  suscipit amet corrupti! Minima nihil optio vel eveniet nobis,
+                  praesentium ut fugiat, laborum officiis ex distinctio itaque!
+                  Provident voluptatum excepturi obcaecati ea! Ratione iure
+                  autem, amet excepturi nobis fugiat eaque nesciunt sed officia
+                  minus illo sint quam laboriosam atque? Ipsam fugiat suscipit
+                  deserunt vel reprehenderit facilis! Molestias, sapiente nisi!
+                  Laborum, fugiat doloribus..
+                </p>
+              </div>
+            </div>
+            <div class="row align-items-center">
+              <div class="col-md-6 align-self-center">
+                <p>
+                  <span class="h3">Types.</span> <hr> Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Sit soluta,
+                  accusantium dolore obcaecati sint repudiandae reiciendis ullam
+                  doloremque suscipit amet corrupti! Minima nihil optio vel
+                  eveniet nobis, praesentium ut fugiat, laborum officiis ex
+                  distinctio itaque! Provident voluptatum excepturi obcaecati
+                  ea! Ratione iure autem, amet excepturi nobis fugiat eaque
+                  nesciunt sed officia minus illo sint quam laboriosam atque?
+                  Ipsam fugiat suscipit deserunt vel reprehenderit facilis!
+                  Molestias, sapiente nisi! Laborum, fugiat doloribus..
+                </p>
+              </div>
+              <div class="col-md-6 img-bg-about d-none d-md-block">
+                <img src="img/photo_cocktail_13.jpg" alt="Laptop" class="img-fluid rounded-circle img-fluid-about" />
+              </div>
+            </div>
+            <div class="row align-items-center">
+              <div class="col-md-6 img-bg-about">
+                <img src="img/photo_cocktail_08.jpg" alt="Laptop" class="img-fluid rounded-circle img-fluid-about" />
+              </div>
+              <div class="col-md-6 align-self-center">
+                <p>
+                  <span class="h3">Basics.</span> <hr> Lorem ipsum dolor sit
+                  amet consectetur adipisicing elit. Sit soluta, accusantium
+                  dolore obcaecati sint repudiandae reiciendis ullam doloremque
+                  suscipit amet corrupti! Minima nihil optio vel eveniet nobis,
+                  praesentium ut fugiat, laborum officiis ex distinctio itaque!
+                  Provident voluptatum excepturi obcaecati ea! Ratione iure
+                  autem, amet excepturi nobis fugiat eaque nesciunt sed officia
+                  minus illo sint quam laboriosam atque? Ipsam fugiat suscipit
+                  deserunt vel reprehenderit facilis! Molestias, sapiente nisi!
+                  Laborum, fugiat doloribus..
+                </p>
+              </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6 align-self-center">
+                  <p>
+                    <span class="h3">Cocktail Party.</span> <hr> Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Sit soluta,
+                    accusantium dolore obcaecati sint repudiandae reiciendis ullam
+                    doloremque suscipit amet corrupti! Minima nihil optio vel
+                    eveniet nobis, praesentium ut fugiat, laborum officiis ex
+                    distinctio itaque! Provident voluptatum excepturi obcaecati
+                    ea! Ratione iure autem, amet excepturi nobis fugiat eaque
+                    nesciunt sed officia minus illo sint quam laboriosam atque?
+                    Ipsam fugiat suscipit deserunt vel reprehenderit facilis!
+                    Molestias, sapiente nisi! Laborum, fugiat doloribus..
+                  </p>
+                </div>
+                <div class="col-md-6 img-bg-about">
+                  <img src="img/photo_cocktail_10.jpg" alt="Laptop" class="img-fluid rounded-circle img-fluid-about" />
+                </div>
+              </div>
+              <div class="row align-items-center">
+                <div class="col-md-6 img-bg-about d-none d-md-block">
+                  <img src="img/photo_cocktail_15.jpg" alt="Laptop" class="img-fluid rounded-circle img-fluid-about" />
+                </div>
+                <div class="col-md-6 align-self-center">
+                  <p>
+                    <span class="h3">Summery.</span> <hr> Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Sit soluta, accusantium
+                    dolore obcaecati sint repudiandae reiciendis ullam doloremque
+                    suscipit amet corrupti! Minima nihil optio vel eveniet nobis,
+                    praesentium ut fugiat, laborum officiis ex distinctio itaque!
+                    Provident voluptatum excepturi obcaecati ea! Ratione iure
+                    autem, amet excepturi nobis fugiat eaque nesciunt sed officia
+                    minus illo sint quam laboriosam atque? Ipsam fugiat suscipit
+                    deserunt vel reprehenderit facilis! Molestias, sapiente nisi!
+                    Laborum, fugiat doloribus..
                   </p>
                 </div>
               </div>
-            </div>
           </div>
         </section>
 
-        <!-- INFO SECTION -->
-        <section id="info" class="py-3">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6 align-self-center">
-                <h3>Lorem Ipsum</h3>
+        <!-- GEAR HEADER -->
+        <section id="gear-header" class="headers py-5">
+            <div class="container py-5">
+              <h1
+                class="display-4 text-light text-center text-uppercase mb-0"
+              >
+                Gear
+              </h1>
+            </div>
+          </section>
+
+          <!-- GEAR -->
+          <section id="gear" class="py-5">
+            <div class="container">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-                  eum odit, magni quisquam soluta recusandae vitae suscipit
-                  distinctio minima reprehenderit.
-                </p>
-                <a href="about.html" class="btn btn-outline-danger btn-lg"
-                  >Learn More</a
-                >
-              </div>
-              <div class="col-md-6">
-                <img src="img/laptop.png" alt="Laptop" class="img-fluid" />
-              </div>
+                    <span class="h3">Basics.</span> Basic equipment every cocktail newbie should have.
+                  </p> <hr>
+                  <div class="row mb-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <img src="img/photo_cocktail_16.jpg" alt="Cocktail Gear" class="card-img-top">
+                            <h5 class="card-header">Gear 1</h5>
+                            <div class="card-body"> 
+                              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum ad quae dicta facere voluptates non.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <img src="img/photo_cocktail_16.jpg" alt="Cocktail Gear" class="card-img-top">
+                            <h5 class="card-header">Gear 1</h5>
+                            <div class="card-body"> 
+                              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum ad quae dicta facere voluptates non.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <img src="img/photo_cocktail_16.jpg" alt="Cocktail Gear" class="card-img-top">
+                            <h5 class="card-header">Gear 1</h5>
+                            <div class="card-body"> 
+                              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum ad quae dicta facere voluptates non.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <img src="img/photo_cocktail_16.jpg" alt="Cocktail Gear" class="card-img-top">
+                            <h5 class="card-header">Gear 1</h5>
+                            <div class="card-body"> 
+                              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum ad quae dicta facere voluptates non.</p>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                  
+                  <p>
+                      <span class="h3">Extras.</span> Level up your game with additional gear for cocktail mastery.
+                    </p> <hr>
+                    <div class="row mb-4">
+                      <div class="col-lg-3 col-md-6">
+                          <div class="card">
+                              <img src="img/photo_cocktail_16.jpg" alt="Cocktail Gear" class="card-img-top">
+                              <h5 class="card-header">Gear 1</h5>
+                              <div class="card-body"> 
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum ad quae dicta facere voluptates non.</p>
+                              </div>
+                            </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                          <div class="card">
+                              <img src="img/photo_cocktail_16.jpg" alt="Cocktail Gear" class="card-img-top">
+                              <h5 class="card-header">Gear 1</h5>
+                              <div class="card-body"> 
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum ad quae dicta facere voluptates non.</p>
+                              </div>
+                            </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                          <div class="card">
+                              <img src="img/photo_cocktail_16.jpg" alt="Cocktail Gear" class="card-img-top">
+                              <h5 class="card-header">Gear 1</h5>
+                              <div class="card-body"> 
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum ad quae dicta facere voluptates non.</p>
+                              </div>
+                            </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                          <div class="card text-center bg-light">
+                              <i class="fas fa-cocktail fa-5x mt-4 text-success "></i>
+                              <h4 class="p-4 text-dark text-uppercase">mojito</h5>
+                            </div>
+                      </div>
+                    </div>
             </div>
+          </section>
+
+          <!-- COCKTAILS HEADER -->
+        <section id="cocktails-header" class="headers py-5">
+          <div class="container py-5">
+            <h1
+              class="display-4 text-light text-center text-uppercase mb-0"
+            >
+              Cocktails
+            </h1>
           </div>
         </section>
 
-        <!-- PHOTO GALLERY -->
-        <section id="gallery" class="py-5">
+        <!-- COCKTAILS -->
+        <section id="cocktails" class="py-5">
           <div class="container">
-            <h1 class="text-center">Photo Gallery</h1>
-            <p class="text-center">Check out our photos</p>
+            <h3 class="text-center pb-4">Ok, you learned a lot about cocktails, you have everything you need, the party is starting, it's time to make cocktails!<br>Easy to make, popular, simple and delicious. These are the best cocktails for your party.</h3>
+            <p>
+              <span class="h3">Rum based.</span> Very common and popular, rum offers endless variations. Make sure you have light and dark rum for more options.
+            </p> <hr>
+            <!-- FIRST ROW -->
             <div class="row mb-4">
-              <div class="col-md-4">
-                <a
-                  href="https://source.unsplash.com/random/560x560"
-                  data-toggle="lightbox"
-                  data-gallery="img-gallery"
-                  data-height="560"
-                  data-width="560"
+                  <a
+                  class="cocktail-cards2 col-lg-3 col-md-6 py-5 text-center text-success"
+                  href="#"
+                  data-toggle="modal"
+                  data-target="#mojitoModal"
                 >
-                  <img
-                    src="https://source.unsplash.com/random/560x560"
-                    alt=""
-                    class="img-fluid"
-                /></a>
-              </div>
-              <div class="col-md-4">
+                  <i class="fas fa-cocktail fa-3x mb-2"></i>
+                  <h3>Mojito</h3>
+                  <p class="mb-0 text-light lead">Make me now!</p>
+                </a>
                 <a
-                  href="https://source.unsplash.com/random/561x561"
-                  data-toggle="lightbox"
-                  data-gallery="img-gallery"
-                  data-height="561"
-                  data-width="561"
+                  class="cocktail-cards4 col-lg-3 col-md-6 py-5 text-center text-warning"
+                  href="#"
+                  data-toggle="modal"
+                  data-target="#mojitoModal"
                 >
-                  <img
-                    src="https://source.unsplash.com/random/561x561"
-                    alt=""
-                    class="img-fluid"
-                /></a>
-              </div>
-              <div class="col-md-4">
+                  <i class="fas fa-cocktail fa-3x mb-2"></i>
+                  <h3>Piña Colada</h3>
+                  <p class="mb-0 text-light lead">Make me now!</p>
+                </a>
                 <a
-                  href="https://source.unsplash.com/random/562x562"
-                  data-toggle="lightbox"
-                  data-gallery="img-gallery"
-                  data-height="562"
-                  data-width="562"
+                  class="cocktail-cards5 col-lg-3 col-md-6 py-5 text-center text-dark"
+                  href="#"
+                  data-toggle="modal"
+                  data-target="#mojitoModal"
                 >
-                  <img
-                    src="https://source.unsplash.com/random/562x562"
-                    alt=""
-                    class="img-fluid"
-                /></a>
-              </div>
+                  <i class="fas fa-cocktail fa-3x mb-2"></i>
+                  <h3>Cuba Libre</h3>
+                  <p class="mb-0 text-light lead">Make me now!</p>
+                </a>
+                <a
+                  class="cocktail-cards3 col-lg-3 col-md-6 py-5 text-center text-danger"
+                  href="#"
+                  data-toggle="modal"
+                  data-target="#mojitoModal"
+                >
+                  <i class="fas fa-cocktail fa-3x mb-2"></i>
+                  <h3>Daiquiri</h3>
+                  <p class="mb-0 text-light lead">Make me now!</p>
+                </a>
             </div>
+            <!-- SECOND ROW -->
             <div class="row mb-4">
-              <div class="col-md-4">
                 <a
-                  href="https://source.unsplash.com/random/563x563"
-                  data-toggle="lightbox"
-                  data-gallery="img-gallery"
-                  data-height="563"
-                  data-width="563"
-                >
-                  <img
-                    src="https://source.unsplash.com/random/563x563"
-                    alt=""
-                    class="img-fluid"
-                /></a>
-              </div>
-              <div class="col-md-4">
-                <a
-                  href="https://source.unsplash.com/random/564x564"
-                  data-toggle="lightbox"
-                  data-gallery="img-gallery"
-                  data-height="564"
-                  data-width="564"
-                >
-                  <img
-                    src="https://source.unsplash.com/random/564x564"
-                    alt=""
-                    class="img-fluid"
-                /></a>
-              </div>
-              <div class="col-md-4">
-                <a
-                  href="https://source.unsplash.com/random/565x565"
-                  data-toggle="lightbox"
-                  data-gallery="img-gallery"
-                  data-height="565"
-                  data-width="565"
-                >
-                  <img
-                    src="https://source.unsplash.com/random/565x565"
-                    alt=""
-                    class="img-fluid"
-                /></a>
-              </div>
+                class="cocktail-cards2 col-lg-3 col-md-6 py-5 text-center text-success"
+                href="#"
+                data-toggle="modal"
+                data-target="#mojitoModal"
+              >
+                <i class="fas fa-cocktail fa-3x mb-2"></i>
+                <h3>Blue Hawaiian</h3>
+                <p class="mb-0 text-light lead">Make me now!</p>
+              </a>
+              <a
+                class="cocktail-cards3 col-lg-3 col-md-6 py-5 text-center text-danger"
+                href="#"
+                data-toggle="modal"
+                data-target="#mojitoModal"
+              >
+                <i class="fas fa-cocktail fa-3x mb-2"></i>
+                <h3>Mai Tai</h3>
+                <p class="mb-0 text-light lead">Make me now!</p>
+              </a>
+              <a
+                class="cocktail-cards1 col-lg-3 col-md-6 py-5 text-center text-primary"
+                href="#"
+                data-toggle="modal"
+                data-target="#mojitoModal"
+              >
+                <i class="fas fa-cocktail fa-3x mb-2"></i>
+                <h3>Hurricane</h3>
+                <p class="mb-0 text-light lead">Make me now!</p>
+              </a>
+              <a
+                class="cocktail-cards5 col-lg-3 col-md-6 py-5 text-center text-dark"
+                href="#"
+                data-toggle="modal"
+                data-target="#mojitoModal"
+              >
+                <i class="fas fa-cocktail fa-3x mb-2"></i>
+                <h3>Dark & Stormy</h3>
+                <p class="mb-0 text-light lead">Make me now!</p>
+              </a>
+          </div>
+          <p>
+            <span class="h3">Gin based.</span> Gin is our second choice for parties. Get yourself a bottle of good gin and you can make many awesome cocktails.
+          </p> <hr>
+          <!-- THIRD ROW -->
+          <div class="row mb-4">
+              <a
+              class="cocktail-cards4 col-lg-3 col-md-6 py-5 text-center text-warning"
+              href="#"
+              data-toggle="modal"
+              data-target="#mojitoModal"
+            >
+              <i class="fas fa-cocktail fa-3x mb-2"></i>
+              <h3>Tom Collins</h3>
+              <p class="mb-0 text-light lead">Make me now!</p>
+            </a>
+            <a
+              class="cocktail-cards2 col-lg-3 col-md-6 py-5 text-center text-success"
+              href="#"
+              data-toggle="modal"
+              data-target="#mojitoModal"
+            >
+              <i class="fas fa-cocktail fa-3x mb-2"></i>
+              <h3>Classic Gin Martini</h3>
+              <p class="mb-0 text-light lead">Make me now!</p>
+            </a>
+            <a
+              class="cocktail-cards1 col-lg-3 col-md-6 py-5 text-center text-primary"
+              href="#"
+              data-toggle="modal"
+              data-target="#mojitoModal"
+            >
+              <i class="fas fa-cocktail fa-3x mb-2"></i>
+              <h3>Gin Gin Mule</h3>
+              <p class="mb-0 text-light lead">Make me now!</p>
+            </a>
+            <a
+              class="cocktail-cards3 col-lg-3 col-md-6 py-5 text-center text-danger"
+              href="#"
+              data-toggle="modal"
+              data-target="#mojitoModal"
+            >
+              <i class="fas fa-cocktail fa-3x mb-2"></i>
+              <h3>Gin & Tonic</h3>
+              <p class="mb-0 text-light lead">Make me now!</p>
+            </a>
+          </div>
+          <p>
+            <span class="h3">More party cocktails.</span> If you are a tequila or vodka lover here are some more great cocktails fantastic for the party. Also, let us not forget famous Caipirinha made from cachasa.
+          </p> <hr>
+          <!-- FOURTH ROW -->
+          <div class="row mb-4">
+            <a
+            class="cocktail-cards3 col-lg-3 col-md-6 py-5 text-center text-danger"
+            href="#"
+            data-toggle="modal"
+            data-target="#mojitoModal"
+          >
+            <i class="fas fa-cocktail fa-3x mb-2"></i>
+            <h3>Margarita</h3>
+            <p class="mb-0 text-light lead">Make me now!</p>
+          </a>
+          <a
+            class="cocktail-cards1 col-lg-3 col-md-6 py-5 text-center text-primary"
+            href="#"
+            data-toggle="modal"
+            data-target="#mojitoModal"
+          >
+            <i class="fas fa-cocktail fa-3x mb-2"></i>
+            <h3>Moscow Mule</h3>
+            <p class="mb-0 text-light lead">Make me now!</p>
+          </a>
+          <a
+            class="cocktail-cards4 col-lg-3 col-md-6 py-5 text-center text-warning"
+            href="#"
+            data-toggle="modal"
+            data-target="#mojitoModal"
+          >
+            <i class="fas fa-cocktail fa-3x mb-2"></i>
+            <h3>Sex On The Beach</h3>
+            <p class="mb-0 text-light lead">Make me now!</p>
+          </a>
+          <a
+            class="cocktail-cards2 col-lg-3 col-md-6 py-5 text-center text-success"
+            href="#"
+            data-toggle="modal"
+            data-target="#mojitoModal"
+          >
+            <i class="fas fa-cocktail fa-3x mb-2"></i>
+            <h3>Caipirinha</h3>
+            <p class="mb-0 text-light lead">Make me now!</p>
+          </a>
             </div>
           </div>
         </section>
 
-        <!-- NEWSLETTER -->
-        <section id="newsletter" class="text-center p-5 bg-dark text-white">
+        <footer id="contact" class="pt-5 text-center bg-success text-light">
           <div class="container">
-            <div class="row">
+            <div class="row justify-content-center">
               <div class="col">
-                <h1>Sign Up for our Newsletter</h1>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
-                  quia perspiciatis quis molestias eligendi velit et, a,
-                  quisquam libero ratione ipsa optio sint harum sed distinctio
-                  eveniet excepturi? Molestiae, maiores.
-                </p>
-                <form class="form-inline justify-content-center">
-                  <input
-                    type="text"
-                    class="form-control mb-2 mr-2"
-                    placeholder="Enter Name"
-                  />
-                  <input
-                    type="text"
-                    class="form-control mb-2 mr-2"
-                    placeholder="Enter Email"
-                  />
-                  <button class="btn btn-primary mb-2">Submit</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- FOOTER -->
-        <footer id="main-footer" class="text-center p-4">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <p>Copyright &copy; <span id="year"></span> Glozzom</p>
+                <h1>Contact Me</h1>
+                <p class="lead">You are ready throw the best cocktail party in town. Don't forget to invite me. It's easy, just send me an email at <a
+                  href="mailto:domagoj.kirigin@gmail.com"
+                  class="px-2 text-primary font-weight-bold"
+                  >domagoj.kirigin@gmail.com</a
+                >. <br>And before that, check out<br><a href="#home" class="px-2 text-primary font-weight-bold"
+                >d o m i d e v e l o p . c o m</a
+              >for more projects. Look forward partying with you. <br>Cheers!</p>
+              <h3>
+                  <a href="#home" class="text-light">
+                    <i class="fas fa-cocktail text-danger"></i> funkyjar
+                  </a>
+                </h3>
+              <p>Copyright &copy; <span id="year"></span> Funkyjar</p>
               </div>
             </div>
           </div>
         </footer>
+    <!-- End of wrapper -->
+
+    <!-- COCKTAIL MODALS -->
+
+    <!-- MOJITO MODAL -->
+    <div id="mojitoModal" class="modal fade text-light">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal-background2">
+          <div class="modal-header">
+            <h1 class="display-4">Mojito</h1>
+              <button class="close text-light" data-dismiss="modal">
+                  <span>&times;</span>
+                </button>
+          </div>
+          <div class="modal-body text-center">
+                <ul class="list-unstyled">
+                  <li class="p-3 h3 font-1 rotate-up">2 ounces light rum</li>
+                    <li class="p-3 h5 font-7 rotate-down">2 teaspoons sugar</li>
+                    <li class="p-3 h3 font-5 rotate-up">6 to 8 fresh mint leaves</li>
+                    <li class="p-3 h5 font-8 rotate-down">Splash club soda</li>
+                    <li class="p-3 h3 font-2 rotate-up">1 lime (cut into two halves)</li>
+                    <li class="p-3 h5 font-9 rotate-down">Garnish: mint sprig</li>
+                </ul>        
+          </div>
+          <div class="modal-footer">
+            <p class="font-8">Place the sugar, mint leaves, and a splash of club soda into a highball glass.
+
+                Muddle well to dissolve the sugar and to release the flavor of the mint.
+                
+                Squeeze the juice from both halves of a lime into the glass, dropping one-half into the glass.
+                
+                Add the rum.
+                
+                Stir well.
+                
+                Fill the glass with ice cubes.
+                
+                Top with club soda.
+                
+                Garnish with the mint sprig.</p>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- End of wrapper -->
 
     <script
       src="http://code.jquery.com/jquery-3.4.1.min.js"
@@ -458,17 +767,11 @@
         pause: 'hover'
       });
 
-      // Lightbox init
-      $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-        event.preventDefault();
-        $(this).ekkoLightbox();
-      });
-
       // Init Scrollspy
-      $('body').scrollspy({ target: '#main-nav' });
+      $('body').scrollspy({ target: ''});
 
-      // add smooth scrolling
-      $('#main-nav a, #main-footer a').on('click', function(e) {
+      // Add Smooth Scrolling
+      $('body a').on('click', function(e) {
         // check for hash value
         if (this.hash !== '') {
           // prevent default behavior
