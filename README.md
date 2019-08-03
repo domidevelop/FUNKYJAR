@@ -1,7 +1,7 @@
 # FUNKYJAR
 
-Cocktail guide and all you need to know to throw an awesome cocktiail party.
+Cocktail guide and all you need to know to throw an awesome cocktail party.
 
-This is a project to practise Bootstrap and Sass skills.
+This is a project to practice Bootstrap and Sass skills.
 
 For more projects, you can visit [domidevelop.com](https://domidevelop.com).
