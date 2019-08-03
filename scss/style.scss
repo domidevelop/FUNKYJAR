@@ -44,6 +44,10 @@ a:focus {
   text-decoration: none;
 }
 
+.list-group-item {
+  background: $light;
+}
+
 .wrapper {
   display: flex;
   width: 100%;
@@ -412,7 +416,15 @@ a:focus {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
+  .modal-header {
+    .display-4 {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (max-width: 767px) {
   #content {
     width: 100%;
   }
