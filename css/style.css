@@ -7569,10 +7569,22 @@ button.bg-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 body {
+  overflow-x: hidden;
   background-color: #fbeccf;
   color: #232020;
-  position: relative; }
+  position: relative;
+  opacity: 0;
+  transition: opacity 2s ease-in-out; }
 
+.animation-nav {
+  animation: navtranslate 2s ease-in-out 1s forwards;
+  transform: translateX(-280px); }
+
+@keyframes navtranslate {
+  0% {
+    transform: translateX(-280px); }
+  100% {
+    transform: translateX(0px); } }
 a,
 a:hover,
 a:focus {
@@ -7594,7 +7606,7 @@ a:focus {
   height: 100vh;
   z-index: 100;
   transition: all 0.3s;
-  background: linear-gradient(to bottom, rgba(251, 236, 207, 0.9), 90%, transparent), url("../img/photo_cocktail_05.jpg");
+  background: linear-gradient(to bottom, rgba(251, 236, 207, 0.9), 90%, transparent), url("../img/web_photo_cocktail_05.jpg");
   background-size: cover; }
   #sidebar h1 a {
     letter-spacing: 3px;
@@ -7632,26 +7644,26 @@ a:focus {
   bottom: 25%; }
 
 .carousel-image-1 {
-  background: linear-gradient(to top, rgba(44, 93, 15, 0.7), 80%, transparent), url("../img/photo_cocktail_01.jpg");
+  background: linear-gradient(to top, rgba(44, 93, 15, 0.7), 80%, transparent), url("../img/web_photo_cocktail_01.jpg");
   background-size: cover; }
 
 .carousel-image-2 {
-  background: linear-gradient(to top, rgba(44, 93, 15, 0.7), 80%, transparent), url("../img/photo_cocktail_02.jpg");
+  background: linear-gradient(to top, rgba(44, 93, 15, 0.7), 80%, transparent), url("../img/web_photo_cocktail_02.jpg");
   background-size: cover; }
 
 .carousel-image-3 {
-  background: linear-gradient(to top, rgba(35, 32, 32, 0.7), 20%, transparent), url("../img/photo_cocktail_03.jpg");
+  background: linear-gradient(to top, rgba(35, 32, 32, 0.7), 20%, transparent), url("../img/web_photo_cocktail_03.jpg");
   background-size: cover; }
 
 .carousel-image-4 {
-  background: linear-gradient(to top, rgba(63, 153, 107, 0.7), 80%, transparent), url("../img/photo_cocktail_04.jpg");
+  background: linear-gradient(to top, rgba(63, 153, 107, 0.7), 80%, transparent), url("../img/web_photo_cocktail_04.jpg");
   background-size: cover; }
 
 .headers {
   letter-spacing: 5px;
   position: relative;
   min-height: 200px;
-  background: linear-gradient(to top, rgba(44, 93, 15, 0.7), 90%, transparent), url("../img/photo_cocktail_06.jpg");
+  background: linear-gradient(to top, rgba(44, 93, 15, 0.7), 90%, transparent), url("../img/web_photo_cocktail_06.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat; }
 
@@ -7713,63 +7725,70 @@ a:focus {
   position: relative;
   z-index: -1; }
 
+#contact {
+  margin-bottom: -100px;
+  padding-bottom: 150px; }
+
+#main-footer {
+  clip-path: polygon(0 0, 100% 4vw, 100% 100%, 0% 100%); }
+
 .modal-background-green {
-  background: linear-gradient(to bottom, rgba(63, 153, 107, 0.7), 70%, rgba(35, 32, 32, 0.7)), url("../img/photo_cocktail_mojito.jpg");
+  background: linear-gradient(to bottom, rgba(63, 153, 107, 0.7), 70%, rgba(35, 32, 32, 0.7)), url("../img/web_photo_cocktail_mojito.jpg");
   background-size: cover;
   min-height: 600px; }
 
 .modal-background-dark-green {
-  background: linear-gradient(to bottom, rgba(63, 153, 107, 0.7), 70%, rgba(35, 32, 32, 0.7)), url("../img/photo_cocktail_moscow_mule.jpg");
+  background: linear-gradient(to bottom, rgba(63, 153, 107, 0.7), 70%, rgba(35, 32, 32, 0.7)), url("../img/web_photo_cocktail_moscow_mule.jpg");
   background-size: cover;
   min-height: 600px; }
 
 .modal-background-blue {
-  background: linear-gradient(black, rgba(0, 255, 255, 0.7), 80%, black), url("../img/photo_cocktail_blue_hawaiian.jpg");
+  background: linear-gradient(black, rgba(0, 255, 255, 0.7), 80%, black), url("../img/web_photo_cocktail_blue_hawaiian.jpg");
   background-size: cover;
   min-height: 600px; }
 
 .modal-background-orange {
-  background: linear-gradient(to bottom, rgba(252, 141, 54, 0.7), 40%, rgba(251, 236, 207, 0.7)), url("../img/photo_cocktail_pina_colada.jpg");
+  background: linear-gradient(to bottom, rgba(252, 141, 54, 0.7), 40%, rgba(251, 236, 207, 0.7)), url("../img/web_photo_cocktail_pina_colada.jpg");
   background-size: cover;
   min-height: 600px; }
 
 .modal-background-orange2 {
-  background: linear-gradient(to bottom, rgba(252, 141, 54, 0.7), 70%, rgba(251, 236, 207, 0.7)), url("../img/photo_cocktail_maitai.jpg");
+  background: linear-gradient(to bottom, rgba(252, 141, 54, 0.7), 70%, rgba(251, 236, 207, 0.7)), url("../img/web_photo_cocktail_maitai.jpg");
   background-size: cover;
   min-height: 600px; }
 
 .modal-background-orange2 {
-  background: linear-gradient(to bottom, rgba(252, 141, 54, 0.7), 70%, rgba(251, 236, 207, 0.7)), url("../img/photo_cocktail_maitai.jpg");
+  background: linear-gradient(to bottom, rgba(252, 141, 54, 0.7), 70%, rgba(251, 236, 207, 0.7)), url("../img/web_photo_cocktail_maitai.jpg");
   background-size: cover;
   min-height: 600px; }
 
 .modal-background-red {
-  background: linear-gradient(to bottom, rgba(203, 81, 95, 0.9), 60%, rgba(251, 236, 207, 0.9)), url("../img/photo_cocktail_hurricane.jpg");
+  background: linear-gradient(to bottom, rgba(203, 81, 95, 0.9), 60%, rgba(251, 236, 207, 0.9)), url("../img/web_photo_cocktail_hurricane.jpg");
   background-size: cover;
   min-height: 600px; }
 
 .modal-background-light {
-  background: linear-gradient(to bottom, rgba(251, 236, 207, 0.9), 80%, rgba(252, 141, 54, 0.7)), url("../img/photo_cocktail_margarita.jpg");
+  background: linear-gradient(to bottom, rgba(251, 236, 207, 0.9), 80%, rgba(252, 141, 54, 0.7)), url("../img/web_photo_cocktail_margarita.jpg");
   background-size: cover;
   min-height: 600px; }
 
 .modal-background-light2 {
-  background: linear-gradient(to bottom, rgba(251, 236, 207, 0.7), 70%, transparent), url("../img/photo_cocktail_tom_collins.jpg");
+  background: linear-gradient(to bottom, rgba(251, 236, 207, 0.7), 70%, transparent), url("../img/web_photo_cocktail_tom_collins.jpg");
   background-size: cover;
   min-height: 600px; }
 
 .modal-background-light3 {
-  background: linear-gradient(to bottom, rgba(251, 236, 207, 0.9), 70%, transparent), url("../img/photo_cocktail_gintonic.jpg");
+  background: linear-gradient(to bottom, rgba(251, 236, 207, 0.9), 70%, transparent), url("../img/web_photo_cocktail_gintonic.jpg");
   background-size: cover;
   min-height: 600px; }
 
 .modal-background-light4 {
-  background: linear-gradient(to bottom, rgba(251, 236, 207, 0.9), 90%, transparent), url("../img/photo_cocktail_martini.jpg");
+  background: linear-gradient(to bottom, rgba(251, 236, 207, 0.9), 90%, transparent), url("../img/web_photo_cocktail_martini.jpg");
   background-size: cover;
   min-height: 600px; }
 
 .modal-background-dark {
-  background: linear-gradient(to top, rgba(35, 32, 32, 0.7), 80%, rgba(251, 236, 207, 0.7)), url("../img/photo_cocktail_cuba_libre.jpg");
+  background: linear-gradient(to top, rgba(35, 32, 32, 0.7), 80%, rgba(251, 236, 207, 0.7)), url("../img/web_photo_cocktail_cuba_libre.jpg");
   background-size: cover;
   min-height: 600px; }
 
