@@ -7793,31 +7793,35 @@ a:focus {
   min-height: 600px; }
 
 .modal-header {
-  font-family: 'Monoton', cursive; }
+  font-family: "Monoton", cursive; }
 
 .font-1 {
-  font-family: 'Frijole', cursive; }
+  font-family: "Frijole", cursive; }
 
 .font-2 {
-  font-family: 'Barriecito', cursive; }
+  font-family: "Barriecito", cursive; }
 
 .font-3 {
-  font-family: 'Finger Paint', cursive; }
+  font-family: "Finger Paint", cursive; }
 
 .font-4 {
-  font-family: 'Cabin Sketch', cursive; }
+  font-family: "Cabin Sketch", cursive; }
 
 .font-5 {
-  font-family: 'Love Ya Like A Sister', cursive; }
+  font-family: "Love Ya Like A Sister", cursive; }
 
 .font-10 {
-  font-family: 'Averia Libre', cursive; }
+  font-family: "Averia Libre", cursive; }
 
 .rotate-up {
   transform: rotate(-5deg); }
 
 .rotate-down {
   transform: rotate(5deg); }
+
+.copyright:hover,
+.copyright:focus {
+  text-decoration: underline; }
 
 @media (max-height: 605px) {
   #sidebar {

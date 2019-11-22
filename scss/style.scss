@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Dekko&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Averia+Libre|Barriecito|Cabin+Sketch|Finger+Paint|Frijole|Love+Ya+Like+A+Sister|Monoton&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Dekko&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Averia+Libre|Barriecito|Cabin+Sketch|Finger+Paint|Frijole|Love+Ya+Like+A+Sister|Monoton&display=swap");
 //  ******************CUTSOMIZE BOOTSTRAP******************
 
 $primary: #2c5d0f;
@@ -18,12 +18,12 @@ $dark: #232020;
 // $light: rgba(251, 236, 207, 0.7);
 // $dark: rgba(35, 32, 32, 0.7);
 
-$font-family-base: 'Dekko', cursive;
+$font-family-base: "Dekko", cursive;
 
 $link-hover-color: 0%;
 $emphasized-link-hover-darken-percentage: 0%;
 
-@import 'bootstrap';
+@import "bootstrap";
 
 //  ****************** end of CUTSOMIZE BOOTSTRAP******************
 
@@ -84,7 +84,7 @@ a:focus {
       90%,
       transparent
     ),
-    url('../img/web_photo_cocktail_05.jpg');
+    url("../img/web_photo_cocktail_05.jpg");
   @include bg-cover;
   h1 {
     a {
@@ -137,25 +137,25 @@ a:focus {
 
 .carousel-image-1 {
   background: linear-gradient(to top, rgba(44, 93, 15, 0.7), 80%, transparent),
-    url('../img/web_photo_cocktail_01.jpg');
+    url("../img/web_photo_cocktail_01.jpg");
   @include bg-cover;
 }
 
 .carousel-image-2 {
   background: linear-gradient(to top, rgba(44, 93, 15, 0.7), 80%, transparent),
-    url('../img/web_photo_cocktail_02.jpg');
+    url("../img/web_photo_cocktail_02.jpg");
   @include bg-cover;
 }
 
 .carousel-image-3 {
   background: linear-gradient(to top, rgba(35, 32, 32, 0.7), 20%, transparent),
-    url('../img/web_photo_cocktail_03.jpg');
+    url("../img/web_photo_cocktail_03.jpg");
   @include bg-cover;
 }
 
 .carousel-image-4 {
   background: linear-gradient(to top, rgba(63, 153, 107, 0.7), 80%, transparent),
-    url('../img/web_photo_cocktail_04.jpg');
+    url("../img/web_photo_cocktail_04.jpg");
   @include bg-cover;
 }
 
@@ -164,7 +164,7 @@ a:focus {
   position: relative;
   min-height: 200px;
   background: linear-gradient(to top, rgba(44, 93, 15, 0.7), 90%, transparent),
-    url('../img/web_photo_cocktail_06.jpg');
+    url("../img/web_photo_cocktail_06.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
@@ -263,7 +263,7 @@ a:focus {
       70%,
       rgba(35, 32, 32, 0.7)
     ),
-    url('../img/web_photo_cocktail_mojito.jpg');
+    url("../img/web_photo_cocktail_mojito.jpg");
   @include bg-cover;
   min-height: 600px;
 }
@@ -275,14 +275,14 @@ a:focus {
       70%,
       rgba(35, 32, 32, 0.7)
     ),
-    url('../img/web_photo_cocktail_moscow_mule.jpg');
+    url("../img/web_photo_cocktail_moscow_mule.jpg");
   @include bg-cover;
   min-height: 600px;
 }
 
 .modal-background-blue {
   background: linear-gradient(black, rgba(0, 255, 255, 0.7), 80%, black),
-    url('../img/web_photo_cocktail_blue_hawaiian.jpg');
+    url("../img/web_photo_cocktail_blue_hawaiian.jpg");
   @include bg-cover;
   min-height: 600px;
 }
@@ -294,7 +294,7 @@ a:focus {
       40%,
       rgba(251, 236, 207, 0.7)
     ),
-    url('../img/web_photo_cocktail_pina_colada.jpg');
+    url("../img/web_photo_cocktail_pina_colada.jpg");
   @include bg-cover;
   min-height: 600px;
 }
@@ -306,7 +306,7 @@ a:focus {
       70%,
       rgba(251, 236, 207, 0.7)
     ),
-    url('../img/web_photo_cocktail_maitai.jpg');
+    url("../img/web_photo_cocktail_maitai.jpg");
   @include bg-cover;
   min-height: 600px;
 }
@@ -318,7 +318,7 @@ a:focus {
       70%,
       rgba(251, 236, 207, 0.7)
     ),
-    url('../img/web_photo_cocktail_maitai.jpg');
+    url("../img/web_photo_cocktail_maitai.jpg");
   @include bg-cover;
   min-height: 600px;
 }
@@ -330,7 +330,7 @@ a:focus {
       60%,
       rgba(251, 236, 207, 0.9)
     ),
-    url('../img/web_photo_cocktail_hurricane.jpg');
+    url("../img/web_photo_cocktail_hurricane.jpg");
   @include bg-cover;
   min-height: 600px;
 }
@@ -342,7 +342,7 @@ a:focus {
       80%,
       rgba(252, 141, 54, 0.7)
     ),
-    url('../img/web_photo_cocktail_margarita.jpg');
+    url("../img/web_photo_cocktail_margarita.jpg");
   @include bg-cover;
   min-height: 600px;
 }
@@ -354,7 +354,7 @@ a:focus {
       70%,
       transparent
     ),
-    url('../img/web_photo_cocktail_tom_collins.jpg');
+    url("../img/web_photo_cocktail_tom_collins.jpg");
   @include bg-cover;
   min-height: 600px;
 }
@@ -366,7 +366,7 @@ a:focus {
       70%,
       transparent
     ),
-    url('../img/web_photo_cocktail_gintonic.jpg');
+    url("../img/web_photo_cocktail_gintonic.jpg");
   @include bg-cover;
   min-height: 600px;
 }
@@ -378,7 +378,7 @@ a:focus {
       90%,
       transparent
     ),
-    url('../img/web_photo_cocktail_martini.jpg');
+    url("../img/web_photo_cocktail_martini.jpg");
   @include bg-cover;
   min-height: 600px;
 }
@@ -390,7 +390,7 @@ a:focus {
       80%,
       rgba(251, 236, 207, 0.7)
     ),
-    url('../img/web_photo_cocktail_cuba_libre.jpg');
+    url("../img/web_photo_cocktail_cuba_libre.jpg");
   @include bg-cover;
   min-height: 600px;
 }
@@ -398,32 +398,34 @@ a:focus {
 // MODAL FONTS
 
 .modal-header {
-  font-family: 'Monoton', cursive;
+  font-family: "Monoton", cursive;
 }
 // MAIN STRONG FONTS
 .font-1 {
-  font-family: 'Frijole', cursive;
+  font-family: "Frijole", cursive;
 }
 .font-2 {
-  font-family: 'Barriecito', cursive;
+  font-family: "Barriecito", cursive;
 }
 
 .font-3 {
-  font-family: 'Finger Paint', cursive;
+  font-family: "Finger Paint", cursive;
 }
 
 // SECONDARY LIGHTER FONTS
 .font-4 {
-  font-family: 'Cabin Sketch', cursive;
+  font-family: "Cabin Sketch", cursive;
 }
 
 .font-5 {
-  font-family: 'Love Ya Like A Sister', cursive;
+  font-family: "Love Ya Like A Sister", cursive;
 }
 
 .font-10 {
-  font-family: 'Averia Libre', cursive;
+  font-family: "Averia Libre", cursive;
 }
+
+// ********************************* UTILITIES ************************************
 
 .rotate-up {
   transform: rotate(-5deg);
@@ -433,7 +435,12 @@ a:focus {
   transform: rotate(5deg);
 }
 
-// *********************************MEDIA QUERIES ************************************
+.copyright:hover,
+.copyright:focus {
+  text-decoration: underline;
+}
+
+// ********************************* MEDIA QUERIES ************************************
 
 @media (max-height: 605px) {
   #sidebar {
